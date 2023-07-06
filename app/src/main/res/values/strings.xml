@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidPractice</string>
+    <string name="weightHint">Enter Your Weight</string>
+    <string name="heightFtHint">Enter Your Height(in Ft.)</string>
+    <string name="heightInHint">Enter Your Height(in In.)</string>
+    <string name="calculateBMI">Calculate</string>
 </resources>
