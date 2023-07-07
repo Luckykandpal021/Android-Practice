@@ -1,39 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#03A9F4"/>
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Row 1 Content1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:text="Row 2 Content 2"/>
-    </LinearLayout>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="sdfksnd"/>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:hint="@string/weightHint"
+        android:inputType="number"
+        android:maxLength="3"
+        android:autofillHints="weight"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editWeight"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:autofillHints="Height"
+        android:hint="@string/heightFtHint"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:id="@+id/editHeightFt"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:hint="@string/heightInHint"
+        android:id="@+id/editHeightIn"
+        android:autofillHints="Height"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:singleLine="true"/>
+    <Button
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="#4CAF50"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
-
+        android:layout_marginTop="20dp"
+        android:text="@string/calculateBMI"
+        android:backgroundTint="@color/bmiCalc"
+        android:id="@+id/bmiCalculate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/resultBmi"
+        android:textSize="25sp"
+        android:id="@+id/bmiResult"/>
 
 </LinearLayout>

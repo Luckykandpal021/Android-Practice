@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         TextView bmiResult = findViewById(R.id.bmiResult);
 
         bmiCalculate.setOnClickListener(v -> {
+            
             int inputWeight = Integer.parseInt(editWeight.getText().toString());
             int inputHeightFt = Integer.parseInt(editHeightFt.getText().toString());
             int inputHeightIn = Integer.parseInt(editHeightIn.getText().toString());

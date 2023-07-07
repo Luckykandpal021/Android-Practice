@@ -4,4 +4,6 @@
     <string name="heightFtHint">Enter Your Height(in Ft.)</string>
     <string name="heightInHint">Enter Your Height(in In.)</string>
     <string name="calculateBMI">Calculate</string>
+    <string name="next">Next</string>
+    <string name="resultBmi">Result</string>
 </resources>
