@@ -3,8 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="bottom|end"
     tools:context=".SecondActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondAppBar"
+        android:background="@color/bmiCalc"/>
+<!-- for customise layout in app bar        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            -->
+<!--        </LinearLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+    </com.google.android.material.appbar.AppBarLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
